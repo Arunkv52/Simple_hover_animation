@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- style css -->
+    <style>
+        .menu_show {
+            display: none;
+            animation: fadeIn 2.5s;
+           
+        }
+
+        .menu:hover+.menu_show {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            100% {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="main-menu">
+        <ul class="dropy">
+            <li class="menu"><a href="#">Services</a></li>
+            <ul class="menu_show">
+                <li>Menu 1</li>
+                <li>Menu 2</li>
+                <li>Menu 3</li>
+            </ul>
+        </ul>
+    </div>
+</body>
+
+</html>
